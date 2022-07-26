@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UtenteController;
+use App\Http\Controllers\OspiteController;
 use App\Http\Controllers\RicettaController;
 use App\Http\Controllers\IngredientiController;
 use App\Http\Controllers\ContieneController;
@@ -32,6 +33,7 @@ Route::post('/register', [AdminController::class,'register']);
 //Inserimento
 //Route::Post('store-utenti',[UtenteController::class,'store_utenti']);
 //Route::Post('store-ricette',[RicettaController::class,'store_ricette']);
+Route::Post('store-ospite',[OspiteController::class,'store_ospite']);
 Route::Post('store-ingredienti',[IngredientiController::class,'store_ingredienti']);
 Route::Post('store-contenuto',[ContieneController::class,'store_contiene']);
 Route::Post('store-immagini',[ImmaginiController::class,'store_immagini']);
